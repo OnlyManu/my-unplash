@@ -1,0 +1,56 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border: none;
+}
+.btnWithBackground {
+    font-weight: 700;
+    color: var(--color-white);
+    border-radius: 12px;
+}
+.btnWithoutBackground {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: var(--color-gray);
+    background-color: transparent;
+}
+.btnRed {
+    background-color: var(--color-red);
+}
+.btnGreen {
+    background-color: var(--color-green);
+}
+
+.ipt {
+    font-size: 14px;
+    color: var(--color-gray);
+    border: 1px solid var(--color-gray);
+    border-radius: 12px;
+    height: 55px;
+}
+.ipt::placeholder {
+    color: var(--color-gray);
+}
+.ipt:focus-visible {
+    outline: none;
+}
+
+.formTitle {
+    font-family: Montserrat;
+    color: var(--color-black);
+}
+.formIptGroup {
+    display: flex;
+    flex-direction: row;
+}
+.formLabel{
+    color: var(--color-light-black);
+}
+.formIpt {
+    width: 100%;
+}
