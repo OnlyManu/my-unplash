@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
     align-items: center;
 }
@@ -32,4 +32,10 @@
 
 .icon path {
     fill: var(--color-gray);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
 }

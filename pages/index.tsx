@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import utils from '../styles/utils.module.css'
 
 import Searchbar from '../components/searchbar/searchbar'
+import ButtonAdd from '../components/buttonAdd/buttonAdd'
+import ListPictures from '../components/list_pictures/listPictures'
 
 export default function Home() {
   return (
@@ -15,13 +16,11 @@ export default function Home() {
 
       <header className={styles.header}>
         <Searchbar />
-        <button className={utils.btn + " " + utils.btnWithBackground + " " + utils.btnGreen}>
-          Add a photo
-        </button>
+        <ButtonAdd />
       </header>
 
       <main className={styles.main}>
-        
+        <ListPictures />
       </main>
     </div>
   )
